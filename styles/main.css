@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: #2E2672;
+}
+header {
+    height: 100px;
+    background-color: #31A17E;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+button {
+    padding: 10px;
+    width: 25%;
+    background-color: #31A146;
+    color: white;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+li {
+    list-style-type: none;
+    border-bottom:  #1d1280 2px solid;
+    background-color: #2E2672;
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+}
+main {
+    background: #1f4037;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.profilepic {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.profilepic img {
+    width: 50%;
+    border-radius: 50%;
+}
+li:hover {
+    background-color: gray;
+} 
+footer {
+    height: 70px;
+    background-color: #31A146;
+}
+
+/* li:link 
+li:visited
+li:active {}  */
+
+button {
+
+
+}
