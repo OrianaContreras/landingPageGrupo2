@@ -29,18 +29,18 @@ button {
     background-color: #31A146;
     color: white;
 }
-ul {
+/*ul {
     display: flex;
     justify-content: space-around;
-}
-li {
+}*/
+/*li {
     list-style-type: none;
     border-bottom:  #1d1280 2px solid;
     background-color: #2E2672;
     padding: 10px;
     width: 25%;
     text-align: center;
-}
+}*/
 main {
     background: #1f4037;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
@@ -66,9 +66,9 @@ section {
     width: 50%;
     border-radius: 50%;
 }
-li:hover {
+/*li:hover {
     background-color: gray;
-} 
+}*/
 footer {
     height: 70px;
     background-color: #31A146;
@@ -81,4 +81,11 @@ li:active {}  */
 button {
 
 
+}
+.rrss{
+    list-style-type: none;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 70px;
 }
