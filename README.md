@@ -10,6 +10,7 @@ Se indican a continuación, los links de los repositorios creados por cada uno d
 Links de Github pages:
 https://andresbarrosob.github.io/GithubPages/
 https://edgarascanio.github.io/Landing-Page-Edgar-Ascanio/
+https://duby23.github.io/DubyLandingPage/
 https://orianacontreras.github.io/landingPageGrupo2/ (Archivo colaborsativo en el que trabajamos todos)
 
 Descripción:
