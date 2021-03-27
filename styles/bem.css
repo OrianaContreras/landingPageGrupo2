@@ -69,3 +69,11 @@ main {
     color: black;
 }
 
+.ul{
+    list-style-type: none;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 70px;
+}
+
