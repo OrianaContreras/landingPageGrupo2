@@ -13,11 +13,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/*
 header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+*/
 
 h1 {
     color: #2E2672;
