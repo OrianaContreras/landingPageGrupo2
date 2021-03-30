@@ -1,0 +1,11 @@
+.footer__ul {
+    list-style-type: none;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 70px;
+    background-color: #31A146;
+    &__li__span {
+        margin-left: 5px;
+    }
+}
