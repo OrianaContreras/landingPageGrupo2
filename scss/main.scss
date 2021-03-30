@@ -1,0 +1,106 @@
+@mixin mq($size) {
+    @media (max-width: $size) {
+        @content
+    }
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    background-color: black;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #31A17E;
+    &__h1 {
+        color: #2E2672;
+    }
+}
+.nav {
+    display: flex;
+    background-color: #31A146;
+    &__button {
+        padding: 10px;
+        width: 25%;
+        background-color: #31A146;
+        color: white;
+        cursor: pointer;
+        &:hover, &:active {
+            background-color: darkgreen;
+        }
+    }
+}
+.main {
+    background: #1f4037; 
+    background: -webkit-linear-gradient(to bottom, #99f2c8, #1f4037);  
+    background: linear-gradient(to bottom, #99f2c8, #1f4037); 
+    &__section {
+        display: flex;
+        justify-content: space-evenly;
+        &__div {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            &__img {
+                width: 50%;
+                border-radius: 50%;
+            }
+            &__a:link, &__a:visited {
+                color: white;
+            }
+            &__a:hover, &__a:active {
+                color: black;
+            }
+        }
+    }
+}
+.footer__ul {
+    list-style-type: none;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 70px;
+    background-color: #31A146;
+    &__li__span {
+        margin-left: 5px;
+    }
+}
+@include mq(768px) {
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        &__button {
+            width: 50%;
+        }
+    }
+    .main__section__div {
+        width: 100%;
+        margin: 8% 0;
+        &__img {
+            width: 80%;
+        }
+    }
+}
+@include mq(576px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        &__button {
+            width: 100%;
+        }
+    }
+    .main__section {
+        display: flex;
+        flex-direction: column;
+        &__div {
+            width: 100%;
+        }
+    }
+}
