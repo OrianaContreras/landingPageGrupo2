@@ -1,3 +1,50 @@
 /* AGRAGAR CODIGO BASE DEL PROYECTO , TIPOGRAFías  Y FUENTES
 CONFIGURACION INICIAL DE NUESTRA PAGINA
 DEPENDIENDO DEL NAVEGADOR TIENEN REGLAS DE MARGIN PROPIAS, DE ESTA ME ASEGURO DE LA INICIACION DE MI PAGINA ES COMO YO LA QUIERO */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-color: darkgreen;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    button {
+        width: 50%;
+    }
+    .profilepic {
+        width: 100%;
+        margin: 8% 0;
+    }
+    .profilepic img{
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        width: 100%;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    .profilepic {
+        width: 100%;
+    }
+}
