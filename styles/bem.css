@@ -29,7 +29,7 @@ html {
 .nav__button:hover, .nav__button:active {
     background-color: darkgreen;
 }
-main {
+.main {
     background: #1f4037; 
     background: -webkit-linear-gradient(to bottom, #99f2c8, #1f4037);  
     background: linear-gradient(to bottom, #99f2c8, #1f4037);   
