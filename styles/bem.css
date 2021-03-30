@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,500&display=swap');
-
 * {
     padding: 0;
     margin: 0;
 }
-
 html {
     background-color: black;
 }
-
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #31A17E;
 }
-
 .header__h1 {
     color: #2E2672;
 }
-
+.nav {
+    display: flex;
+    background-color: #31A146;
+}
 .nav__button {
     padding: 10px;
     width: 25%;
@@ -26,54 +26,78 @@ html {
     color: white;
     cursor: pointer;
 }
-
 .nav__button:hover, .nav__button:active {
     background-color: darkgreen;
 }
-
-.nav__button--colorgreen:hover {
-    background-color: rgb(90, 252, 90);
-}
-
 main {
     background: #1f4037; 
     background: -webkit-linear-gradient(to bottom, #99f2c8, #1f4037);  
     background: linear-gradient(to bottom, #99f2c8, #1f4037);   
 }
-
-.section {
+.main__section {
     display: flex;
     justify-content: space-evenly;
 }
-
-.section__div {
-        width: 50%;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
+.main__section__div {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-.section__div__img {
+.main__section__div__img {
     width: 50%;
     border-radius: 50%;
 }
-
-.section__div__a:link, .section__div__a:visited {
+.main__section__div__a:link, .main__section__div__a:visited {
     color: white;
-}
-    
-.section__div__a:hover, .section__div__a:active {
+} 
+.main__section__div__a:hover, .main__section__div__a:active {
     color: black;
 }
-
-.ul{
+.footer__ul{
     list-style-type: none;
     display:flex;
     justify-content:space-around;
     align-items: center;
     height: 70px;
+    background-color: #31A146;
+}
+.footer__ul__li__span {
+    margin-left: 5px;
+}
+@media (max-width: 768px) {
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav__button {
+        width: 50%;
+    }
+    .main__section__div {
+        width: 100%;
+        margin: 8% 0;
+    }
+    .main__section__div__img {
+        width: 80%;
+    }
 }
 
+@media (max-width: 576px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav__button {
+        width: 100%;
+    }
+    .main__section {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__section__div {
+        width: 100%;
+    }
+}
