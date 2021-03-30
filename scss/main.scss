@@ -5,7 +5,6 @@
 @import 'components/menu','components/navbar';
 @import 'views/contactus';
 
-
 @include mq(768px) {
     .nav {
         display: flex;
@@ -22,6 +21,7 @@
         }
     }
 }
+
 @include mq(576px) {
     .nav {
         display: flex;
