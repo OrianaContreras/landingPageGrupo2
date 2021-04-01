@@ -1,40 +1,23 @@
 @import 'utilities/variables', 'utilities/mixins';
 @import 'vendors/bootstrap';
-@import 'base/base';
 @import 'layout/header', 'layout/footer','layout/main';
 @import 'components/menu','components/navbar';
 @import 'views/contactus';
+@import 'base/base';
 
-@include mq(768px) {
-    .nav {
+.aside {
+    &__span {
+        text-align: center;
+    }
+    &__section {
         display: flex;
         flex-wrap: wrap;
-        &__button {
-            width: 50%;
-        }
-    }
-    .main__section__div {
-        width: 100%;
-        margin: 8% 0;
+        justify-content: center;
         &__img {
-            width: 80%;
-        }
-    }
-}
-
-@include mq(576px) {
-    .nav {
-        display: flex;
-        flex-direction: column;
-        &__button {
-            width: 100%;
-        }
-    }
-    .main__section {
-        display: flex;
-        flex-direction: column;
-        &__div {
-            width: 100%;
+            box-sizing: border-box;
+            width: 30%;
+            object-fit: scale-down;
+            border: 2px white solid;
         }
     }
 }
