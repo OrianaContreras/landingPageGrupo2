@@ -1,6 +1,8 @@
 .nav {
     display: flex;
     background-color: #31A146;
+    position: sticky;
+    top: 0;
     &__button {
         padding: 10px;
         width: 25%;
@@ -9,6 +11,26 @@
         cursor: pointer;
         &:hover, &:active {
             background-color: darkgreen;
+        }
+    }
+}
+
+@include mq(768px) {
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        &__button {
+            width: 50%;
+        }
+    }
+}
+
+@include mq(576px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        &__button {
+            width: 100%;
         }
     }
 }

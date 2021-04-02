@@ -1,7 +1,4 @@
 .main {
-    background: #1f4037; 
-    background: -webkit-linear-gradient(to bottom, #99f2c8, #1f4037);  
-    background: linear-gradient(to bottom, #99f2c8, #1f4037); 
     &__section {
         display: flex;
         justify-content: space-evenly;
@@ -16,6 +13,7 @@
             &__img {
                 width: 50%;
                 border-radius: 50%;
+                border: 3px green solid;
             }
             &__a:link, &__a:visited {
                 color: white;
@@ -23,6 +21,26 @@
             &__a:hover, &__a:active {
                 color: black;
             }
+        }
+    }
+}
+
+@include mq(768px) {
+    .main__section__div {
+        width: 100%;
+        margin: 8% 0;
+        &__img {
+            width: 80%;
+        }
+    }
+}
+
+@include mq(576px) {
+    .main__section {
+        display: flex;
+        flex-direction: column;
+        &__div {
+            width: 100%;
         }
     }
 }

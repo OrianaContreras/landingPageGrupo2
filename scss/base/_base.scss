@@ -9,38 +9,5 @@ html{
 
 body {
     font-family: 'Roboto', sans-serif;
-}
-
-@include mq(768px) {
-    .nav {
-        display: flex;
-        flex-wrap: wrap;
-        &__button {
-            width: 50%;
-        }
-    }
-    .main__section__div {
-        width: 100%;
-        margin: 8% 0;
-        &__img {
-            width: 80%;
-        }
-    }
-}
-
-@include mq(576px) {
-    .nav {
-        display: flex;
-        flex-direction: column;
-        &__button {
-            width: 100%;
-        }
-    }
-    .main__section {
-        display: flex;
-        flex-direction: column;
-        &__div {
-            width: 100%;
-        }
-    }
+    background: linear-gradient(to bottom, #99f2c8, #1f4037);
 }
