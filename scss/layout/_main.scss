@@ -1,0 +1,46 @@
+.main {
+    &__section {
+        display: flex;
+        justify-content: space-evenly;
+        &__div {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            &__img {
+                width: 50%;
+                border-radius: 50%;
+                border: 3px green solid;
+            }
+            &__a:link, &__a:visited {
+                color: white;
+            }
+            &__a:hover, &__a:active {
+                color: black;
+            }
+        }
+    }
+}
+
+@include mq(768px) {
+    .main__section__div {
+        width: 100%;
+        margin: 8% 0;
+        &__img {
+            width: 80%;
+        }
+    }
+}
+
+@include mq(576px) {
+    .main__section {
+        display: flex;
+        flex-direction: column;
+        &__div {
+            width: 100%;
+        }
+    }
+}

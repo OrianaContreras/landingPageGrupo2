@@ -1,0 +1,30 @@
+.section{
+    background-color: rgb(128, 163, 114);
+    margin: 0 10px ;
+    text-align: center;
+    &__h1{
+        font-size: 50px;
+    }
+
+    &__div{
+        display: flex;
+        align-items: center;
+        margin: 10px auto;
+
+        &__img{
+            width: 45%;
+            margin:30px;
+            border:5px black solid;
+        }
+
+        &__p{
+            color:aliceblue;
+            width: 50%;
+        }
+    
+    }
+    &__div--rowreverse{
+        flex-direction: row-reverse;
+    }
+
+}
